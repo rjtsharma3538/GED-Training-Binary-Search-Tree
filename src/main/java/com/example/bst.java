@@ -11,8 +11,11 @@ public class bst<T extends Comparable<T>> {
         root = insertion(root, data);
     }
 
-    public boolean search(T data) {
-        return searching(root, data);
+    public void search(T data) {
+        if(searching(root, data))
+            System.out.println("Value " + data + " is present in bst");
+        else 
+            System.out.println("Value " + data + " is not present in bst");
     }
 
     public void display() {

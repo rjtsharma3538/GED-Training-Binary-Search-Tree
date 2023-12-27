@@ -17,11 +17,6 @@ public class Main {
         obj.insert(63);
         obj.insert(67);
 
-        obj.display();
-
-        if(obj.size()==13)
-            System.out.println("All are added");
-        else 
-            System.out.println("all are not added");
+        obj.search(63);
     }
 }
