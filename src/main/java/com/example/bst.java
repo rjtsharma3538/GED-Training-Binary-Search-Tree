@@ -19,6 +19,18 @@ public class bst<T extends Comparable<T>> {
         Traversal(root);
     }
 
+    public int size()
+    {
+        return numberOfNodes(root);
+    }
+
+    private int numberOfNodes(Node<T> root)
+    {
+        if(root==null)
+            return 0;
+        return 1+numberOfNodes(root.left)+numberOfNodes(root.right);
+    }
+
     private void Traversal(Node<T> root) {
         if (root == null)
             return;
